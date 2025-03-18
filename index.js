@@ -3,6 +3,10 @@ class Marker {
   markerColor = "red";
   markerInk = 100;
 
+  constructor(markerColor) {
+    this.markerColor = markerColor;
+  }
+
   print(str) {
     const SYMBOL_COST = 0.5;
 
@@ -33,7 +37,7 @@ class Marker {
   }
 }
 
-const marker1 = new Marker();
+const marker1 = new Marker("blue");
 // marker1.print(
 //   "The quick brown fox jumps over the lazy dog and runs into the forest where it finds birds in the trees and flowers in the morning dew with the rhythm of nature whispering through the sunlit leaves and the stars peeking through in the midst of the silence of the forest's heart. The quick brown fox jumps over the lazy dog and runs into the forest where it finds birds in the trees and flowers in the morning dew with the rhythm of nature whispering through the sunlit leaves and the stars peeking through in the midst of the silence of the forest's heart"
 // );
